@@ -1,0 +1,31 @@
+{
+  "name": "restfb-niwinn",
+  "version": "1.0.0",
+  "description": "api creation for fb assn1",
+  "main": "homeapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niwinp/056FBCloneAngular1.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Niwin P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niwinp/056FBCloneAngular1/issues"
+  },
+  "homepage": "https://github.com/Niwinp/056FBCloneAngular1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

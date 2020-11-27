@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title> Person Information </title>
+    <meta charset="UTF-8">
+    <script>
+      var baseurl = "localhost:3000/posts/special";
+      function loadPersons(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET",baseurl ,true);
+        xmlhttp.onreadystatechange = function() {
+          //if(xmlhttp.readyState ===4 && xmlhttp.status ===200){
+            var poststext = JSON.parse(xmlhttp.responseText);
+         
+            var tbl = poststext.message;
+            document.getElementById("personinfo").innerHTML = "hi";
+          
+        };
+        xmlhttp.send();
+      }
+      window.onload = function(){
+        loadPersons();
+      }
+    </script>
+  </head>
+  <body>
+    <p id="personinfo"> test </p>
+  </body>
+</html>

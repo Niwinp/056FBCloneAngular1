@@ -69,21 +69,32 @@
         <div>
           <!-- post -->
           <div class="panel panel-default">
-            <div class="panel-body">
+            <div class="panel-body" id="test">
               
-			   
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("http://localhost:3000/posts/special", function(result){
+      $.each(result, function(i, field){
+        $("#test").append(field + " <br>");
+      });
+    });
+  });
+});
+</script>  
 
-			   <table> 
+			  <!--  <table> 
 			
 
             <tr ng-repeat="p in postArray">
-               <!--  <td><label>{{$index + 1}}</label></td> -->
+                <td><label>{{$index + 1}}</label></td>
                 <td><label>{{p.post}}</label></td>
 				<td><label><br><br></label></td>
                 
             </tr>
 			
-        </table>
+        </table> -->
 			  
 			  
 			  
